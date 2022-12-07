@@ -183,7 +183,7 @@ class PSiswaController extends BaseController
     private function savefile($id){
         $file = $this->request->getFile('berkas');
 
-        if ($file->hasMoved()== false){
+        if ($file->hasMoved()== null){
             $path = WRITEPATH . 'uploads/siswa';
 
             if(file_exists($path) == false){

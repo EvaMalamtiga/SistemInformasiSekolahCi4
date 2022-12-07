@@ -21,7 +21,7 @@
                             <th>Status Masuk</th>
                             <th>Tahun Masuk</th>
                             <th>Nama Siswa</th>
-                            <th>Kelas Sekarang</th>
+                            <th>Kelas Terakhir Siswa</th>
                          
                         </tr>
                     </thead>
@@ -98,7 +98,7 @@
                                 <input type="text" name="kota" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Kelas Sekarang</label>
+                                <label class="form-label">Kelas Terakhir Siswa</label>
                                 <select name="kelas_id" class="form-control">
                                     <?php
                                         use App\Models\KelasModel;

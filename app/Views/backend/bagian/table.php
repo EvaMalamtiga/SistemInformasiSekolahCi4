@@ -50,7 +50,7 @@
                             
                             <div class="mb-3">
                                 <label class="form-label">Tugas Pokok</label>
-                                <input type="text" name="tugas_pokok" class="form-control">
+                                <input type="textarea" name="tugas_pokok" class="form-control">
                             </div>
                         </form>
                         </div>
