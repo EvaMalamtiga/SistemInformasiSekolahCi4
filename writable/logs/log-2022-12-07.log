@@ -1,0 +1,426 @@
+ERROR - 2022-12-07 06:40:45 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\System SYS\wp2\SIS\app\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+CRITICAL - 2022-12-07 06:40:45 --> Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pegawai`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 06:40:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\System SYS\wp2\SIS\app\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+CRITICAL - 2022-12-07 06:40:47 --> Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pegawai`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 06:40:50 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`jadwal`, CONSTRAINT `jadwal_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\System SYS\wp2\SIS\app\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+CRITICAL - 2022-12-07 06:40:50 --> Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`jadwal`, CONSTRAINT `jadwal_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pegawai`
+WHERE `id` IN (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pegawai`
+WHERE `id` IN (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pegawai`
+WHERE `id` IN (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pegawai`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 06:41:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\System SYS\wp2\SIS\app\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+CRITICAL - 2022-12-07 06:41:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pegawai`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 06:41:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`jadwal`, CONSTRAINT `jadwal_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\System SYS\wp2\SIS\app\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+CRITICAL - 2022-12-07 06:41:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`jadwal`, CONSTRAINT `jadwal_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pegawai`
+WHERE `id` IN (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pegawai`
+WHERE `id` IN (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pegawai`
+WHERE `id` IN (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pegawai`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 06:41:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE) in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pe...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pe...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pe...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pe...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Users\System SYS\wp2\SIS\app\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#12 {main}
+CRITICAL - 2022-12-07 06:41:24 --> Cannot delete or update a parent row: a foreign key constraint fails (`sis`.`kelas`, CONSTRAINT `Kelas_pegawai_id_foreign` FOREIGN KEY (`pegawai_id`) REFERENCES `pegawai` (`id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pegawai`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pegawai`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PegawaiController.php(172): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->delete()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 07:07:26 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PegawaiController.php on line 179.
+ 1 APPPATH\Controllers\PegawaiController.php(164): App\Controllers\PegawaiController->savefile(3)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PegawaiController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PegawaiController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:35:27 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(135): App\Controllers\PSiswaController->savefile(2)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 08:36:15 --> mysqli_sql_exception: Duplicate entry '123456' for key 'PRIMARY' in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `si...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `si...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `si...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `si...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\System SYS\wp2\SIS\app\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+#10 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#13 {main}
+CRITICAL - 2022-12-07 08:36:15 --> Duplicate entry '123456' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'123456\', \'12321\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$skpZv2wO15dp2uhhpyeS2OHq74FH5IWyMjqR5TeiBpa6dLW0oriFq\', \'2022-12-07 08:36:15\', \'2022-12-07 08:36:15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'123456\', \'12321\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$skpZv2wO15dp2uhhpyeS2OHq74FH5IWyMjqR5TeiBpa6dLW0oriFq\', \'2022-12-07 08:36:15\', \'2022-12-07 08:36:15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'123456\', \'12321\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$skpZv2wO15dp2uhhpyeS2OHq74FH5IWyMjqR5TeiBpa6dLW0oriFq\', \'2022-12-07 08:36:15\', \'2022-12-07 08:36:15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (:nisn:, :nis:, :status_masuk:, :thn_masuk:, :nama_depan:, :nama_belakang:, :nik:, :no_kk:, :gender:, :tgl_lahir:, :tempat_lahir:, :alamat:, :kota:, :kelas_id:, :no_telp_rumah:, :no_hp_ibu:, :no_hp_ayah:, :nm_ayah:, :nm_ibu:, :nm_wali:, :email:, :sandi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 08:36:42 --> mysqli_sql_exception: Duplicate entry '12321' for key 'nis' in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `si...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `si...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `si...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `si...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\System SYS\wp2\SIS\app\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+#10 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#13 {main}
+CRITICAL - 2022-12-07 08:36:42 --> Duplicate entry '12321' for key 'nis'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'232132\', \'12321\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$o5kGV5TO8ccgBgXLZA.R/ecsGQ9jRG3HUZekprL2llFQWhOoGO8Uy\', \'2022-12-07 08:36:42\', \'2022-12-07 08:36:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'232132\', \'12321\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$o5kGV5TO8ccgBgXLZA.R/ecsGQ9jRG3HUZekprL2llFQWhOoGO8Uy\', \'2022-12-07 08:36:42\', \'2022-12-07 08:36:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'232132\', \'12321\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$o5kGV5TO8ccgBgXLZA.R/ecsGQ9jRG3HUZekprL2llFQWhOoGO8Uy\', \'2022-12-07 08:36:42\', \'2022-12-07 08:36:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (:nisn:, :nis:, :status_masuk:, :thn_masuk:, :nama_depan:, :nama_belakang:, :nik:, :no_kk:, :gender:, :tgl_lahir:, :tempat_lahir:, :alamat:, :kota:, :kelas_id:, :no_telp_rumah:, :no_hp_ibu:, :no_hp_ayah:, :nm_ayah:, :nm_ibu:, :nm_wali:, :email:, :sandi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:37:50 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(135): App\Controllers\PSiswaController->savefile(5)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 08:39:19 --> mysqli_sql_exception: Duplicate entry '232132' for key 'PRIMARY' in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `si...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `si...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `si...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `si...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\System SYS\wp2\SIS\app\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+#10 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#13 {main}
+CRITICAL - 2022-12-07 08:39:19 --> Duplicate entry '232132' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'232132\', \'12661\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$kxDxZ1uZkTTSqrbY9Bn0VeZv2PjarX7KVgx3TjPmf7Qig2KZLbsE6\', \'2022-12-07 08:39:19\', \'2022-12-07 08:39:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'232132\', \'12661\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$kxDxZ1uZkTTSqrbY9Bn0VeZv2PjarX7KVgx3TjPmf7Qig2KZLbsE6\', \'2022-12-07 08:39:19\', \'2022-12-07 08:39:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'232132\', \'12661\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$kxDxZ1uZkTTSqrbY9Bn0VeZv2PjarX7KVgx3TjPmf7Qig2KZLbsE6\', \'2022-12-07 08:39:19\', \'2022-12-07 08:39:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (:nisn:, :nis:, :status_masuk:, :thn_masuk:, :nama_depan:, :nama_belakang:, :nik:, :no_kk:, :gender:, :tgl_lahir:, :tempat_lahir:, :alamat:, :kota:, :kelas_id:, :no_telp_rumah:, :no_hp_ibu:, :no_hp_ayah:, :nm_ayah:, :nm_ibu:, :nm_wali:, :email:, :sandi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-07 08:39:35 --> mysqli_sql_exception: Duplicate entry '12661' for key 'nis' in C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `si...', 0)
+#1 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `si...')
+#2 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `si...')
+#3 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `si...', Array, false)
+#4 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\System SYS\wp2\SIS\app\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+#9 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+#10 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\System SYS\wp2\SIS\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\System SYS\wp2\SIS\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\System...')
+#13 {main}
+CRITICAL - 2022-12-07 08:39:35 --> Duplicate entry '12661' for key 'nis'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'23213\', \'12661\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$80IfIcT03hPTzI.79LwpQud65npAxJVwUdxed39cyqQSCpDW0L2L2\', \'2022-12-07 08:39:35\', \'2022-12-07 08:39:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'23213\', \'12661\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$80IfIcT03hPTzI.79LwpQud65npAxJVwUdxed39cyqQSCpDW0L2L2\', \'2022-12-07 08:39:35\', \'2022-12-07 08:39:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (\'23213\', \'12661\', \'P\', \'2022-12-14\', \'Hanzo\', \'Ackerman\', \'3124463\', \'43254361232\', \'L\', \'\', \'Pontianak\', \'Jl. Purnama\', \'Pontianak\', \'2\', \'0821312312\', \'0832156711\', \'0826816412\', \'Sumanto\', \'Nagita\', \'Nikolas\', \'hanzo@gmail.com\', \'$2y$10$80IfIcT03hPTzI.79LwpQud65npAxJVwUdxed39cyqQSCpDW0L2L2\', \'2022-12-07 08:39:35\', \'2022-12-07 08:39:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `siswa` (`nisn`, `nis`, `status_masuk`, `thn_masuk`, `nama_depan`, `nama_belakang`, `nik`, `no_kk`, `gender`, `tgl_lahir`, `tempat_lahir`, `alamat`, `kota`, `kelas_id`, `no_telp_rumah`, `no_hp_ibu`, `no_hp_ayah`, `nm_ayah`, `nm_ibu`, `nm_wali`, `email`, `sandi`, `created_at`, `updated_at`) VALUES (:nisn:, :nis:, :status_masuk:, :thn_masuk:, :nama_depan:, :nama_belakang:, :nik:, :no_kk:, :gender:, :tgl_lahir:, :tempat_lahir:, :alamat:, :kota:, :kelas_id:, :no_telp_rumah:, :no_hp_ibu:, :no_hp_ayah:, :nm_ayah:, :nm_ibu:, :nm_wali:, :email:, :sandi:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PSiswaController.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->store()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:41:02 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:41:15 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:42:00 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:42:06 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:42:10 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:44:24 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:57:05 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:57:11 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:58:06 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 08:58:25 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\PSiswaController.php on line 186.
+ 1 APPPATH\Controllers\PSiswaController.php(173): App\Controllers\PSiswaController->savefile(8)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PSiswaController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PSiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

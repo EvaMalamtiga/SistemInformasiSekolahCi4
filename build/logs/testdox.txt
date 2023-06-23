@@ -1,0 +1,15 @@
+Email
+ [x] Kirim email
+
+Jadwal
+ [x] Create show update delete
+ [x] Read
+
+Kehadiran Guru
+ [x] Create show update delete
+ [x] Read
+
+Mapel
+ [x] Create show update delete
+ [x] Read
+

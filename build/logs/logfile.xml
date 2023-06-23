@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="7" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="5.323431">
+    <testsuite name="App" tests="7" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="5.323431">
+      <testsuite name="EmailTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\EmailTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="4.506669">
+        <testcase name="testKirimEmail" class="EmailTest" classname="EmailTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\EmailTest.php" line="12" assertions="1" time="4.506669"/>
+      </testsuite>
+      <testsuite name="JadwalTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\JadwalTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.410404">
+        <testcase name="testCreateShowUpdateDelete" class="JadwalTest" classname="JadwalTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\JadwalTest.php" line="14" assertions="4" time="0.394854"/>
+        <testcase name="testRead" class="JadwalTest" classname="JadwalTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\JadwalTest.php" line="45" assertions="1" time="0.015549"/>
+      </testsuite>
+      <testsuite name="KehadiranGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\KehadiranGuruTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.225753">
+        <testcase name="testCreateShowUpdateDelete" class="KehadiranGuruTest" classname="KehadiranGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\KehadiranGuruTest.php" line="14" assertions="4" time="0.176869"/>
+        <testcase name="testRead" class="KehadiranGuruTest" classname="KehadiranGuruTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\KehadiranGuruTest.php" line="45" assertions="1" time="0.048884"/>
+      </testsuite>
+      <testsuite name="MapelTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\MapelTest.php" tests="2" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.180605">
+        <testcase name="testCreateShowUpdateDelete" class="MapelTest" classname="MapelTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\MapelTest.php" line="16" assertions="4" time="0.152222"/>
+        <testcase name="testRead" class="MapelTest" classname="MapelTest" file="C:\Users\System SYS\wp2\SistemInformasiSekolah\tests\unit\MapelTest.php" line="46" assertions="1" time="0.028383"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
